@@ -258,13 +258,17 @@
  }
  
  .main-menu {
-     position: relative;
-     top: 0;
-     right: 18px;
-     text-align: right;
- 
-     /* word-spacing: 40px; */
- }
+    width:100%;
+    position: relative;
+    top: 0;
+    right: 18px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+
+    /* word-spacing: 40px; */
+}
+
  
  .logo {
      width: 15%;
