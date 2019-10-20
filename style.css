@@ -178,7 +178,7 @@
  
  a {
      text-decoration: none;
-     color: black;
+     color: white;
      outline: none;
      transition: color .5s ease, background .5s ease;
  }
@@ -186,7 +186,7 @@
  a:hover {
      color: #9966ff;
      background-color: #c3e3ff;
-     padding: 20px;
+     padding: 30px;
  }
  /* PARAGRAPHS*/
  
@@ -196,6 +196,7 @@
  
  strong {
      font-weight: 500;
+     color: lightgreen;
  }
  
  em {
@@ -284,16 +285,11 @@
  /* HEADER 
  --------------------------------------------*/
  
- .top-header {
-     background-color: lightblue;
-     background-image: linear-gradient(blue purple);
-     display: flex;
-     justify-content: flex-end;
-     padding: 0.5em 0;
-
- }
- 
+.header-container {
+    display: inline-flex;
+} 
  .logo {
+     position: absolute;
      top: 0px;
      margin-top: 40px;
      width: 15%;
@@ -307,19 +303,24 @@
  }
  
  .main-menu {
-     position: relative;
+     position: absolute;
+     /* background-color: transparent; */
+     border-style: solid;
+     border-width: 2px;
+     border-color: lemonchiffon;
      top: 0;
      right: 28px;
+     padding-right: 2em;
  }
  
  .main-menu li {
      display: inline-block;
      font-weight: 400px;
      list-style-type: none;
-     margin-left: 40px;
+     margin-left: 35px;
      /* padding-top: 42px; */
      line-height: 4em;
- }
+ }  
  
  .section-2 {
      position: relative;
@@ -339,11 +340,14 @@
  h1 {
      color:lightblue;
  }
- 
+
+  /* MAIN 
+ --------------------------------------------*/
+
  #banner {
      background: lightblue;
      text-align: center;
-     padding: 2.5em 0 2.5em 0;
+     padding: 1.5em 0 .5em 0;
      margin-bottom: 0;
      margin-top: -9px;
  }
@@ -355,30 +359,42 @@
      height: 100%;
  }
  .img-1 {
-     width: 100%;
+     width: 70%;
+     border-style: solid;
+     border-width: 10px;
+     border-radius: 50%;
+     border-color: lemonchiffon;
+     
+ }
+ .bg-video {
+     width: 300px;
+     height: 220px;
+     border-style: solid;
+     border-width: 10px;
+     border-color: lemonchiffon;
+
  }
  .container article {
      display: inline-block;
-     width: 25em;
+     width: 15em;
      background: #fff;
      text-align: center;
+     border-style: solid;
+     border-width: 6px;
+     border-radius: 5%;
+     border-color: linen;
      padding: 1em 1em;
      margin: 1em 1em;
      white-space: normal;
      opacity: 1.0;
  }
+ .img-font {
+     font-size: 22px;
+ }
  
- .row-1 {
-     display: flex;
-     align-content: center;
- }
- .inner-container {
-     background-color: white;
-     width: 50%;
-     display: flex;
- }
  p {
-     padding: 2em;
+     padding: 1em;
+     font-size: 14px;
  }
  /* END OF SECTION ONE------------------- */
 
@@ -388,12 +404,13 @@
   .bottom-container {
     width: 100%;
     height: 200px;
-    position: absolute;
-    text-align: center;
+    position: relative;
+    text-align: left;
     align-content: center;
-    background-image: url("assets/ethi eri arts/27-03957.jpg");
+    background-image: url("assets/teddy images/cover1.jpg");
     background-size: cover;
     background-position: center;
+    color: lightgreen;
     display: table;
 }
 
@@ -406,17 +423,60 @@
 
 .text {
     margin-top: -150px;
-    text-align: center;
+    /* text-align: right; */
     transform: translate(10%, 10%);
-    color: whitesmoke;
+    margin-left: 100px;
+
     font-size: 18px;
     letter-spacing: 3px;
 }
 
 .text-2 {
-    color: white;
     font-size: 35px;
+    margin-left: 18px;
 }
 
   /*  END OF SECTION TWO--------------------- */
+  .column {
+column-count: 3;
+  }
 
+  .videos {
+      background-color: lightgrey;
+      display: flex;
+      line-height: 65px;
+      padding-top: 1em;
+      padding-left: 1em;
+  }
+      
+  /*  END OF SECTION THREE--------------------- */
+
+   /* footer 
+ --------------------------------------------*/
+ .footer-box {
+    margin-top: -15px;
+    padding: 20px;
+        background-color: lightblue;
+    }
+    .social-icons {
+        text-align: center;
+        padding-top: 1px;
+        }  
+    .social-icons li {
+        display:inline-block;
+        list-style-type:none;
+        }
+    .social-icons li a {
+        border-bottom: none;
+        }
+    .social-icons li img {
+        widows: 25px;
+        height:25px;
+        margin-right: 20px;
+        
+    }
+    .copyright {
+        text-align: center;
+        color: white;
+    }
+    /*the end--------*/
