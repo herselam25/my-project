@@ -177,20 +177,17 @@
  
  a {
      text-decoration: none;
-     color: white;
-     outline: none;
-     transition: color .5s ease, background .5s ease;
  }
  
  a:hover {
-     color: #9966ff;
-     background-color: #c3e3ff;
-     padding: 30px;
+     color: #21b2a6;
  }
  /* PARAGRAPHS*/
  
  p {
      margin-bottom: 1em;
+     padding: 1em;
+     font-size: 24px;
  }
  
  strong {
@@ -204,8 +201,7 @@
  /*3. HELPER CLASSES (reusable styles)
 -------------------------------------------------------------------------- */
  /* MARGINS*/
-
-  /* .margin-bottom1 {
+ /* .margin-bottom1 {
      margin-bottom: 1em;
     }
  
@@ -235,29 +231,35 @@
  .padding-bottom2 {
      padding-bottom: 1em;
  }   */
-
-
  /* BGS */
-
  /* .bd-grey {
      background-color: rgba(0, 0, 0, 0.1);
      padding: 1em;
  } */
-
-
+ 
+ .flex {
+     display: flex;
+ }
  /* HEADER 
  --------------------------------------------*/
- .flex {
-    display: flex;
- }
- .log {
-     width: 3px;
+ 
+ header {
+     height: 100vh;
+     background-image: url("assets/teddy-images/t.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     color: #fff;
      position: relative;
-     top: 0px;
-
+     display: flex;
+     justify-content: center;
+     align-items: center;
  }
+
+ 
  .main-menu {
-     position: absolute;
+     position: fixed;
+     background: #21b2a6;
      top: 0;
      right: 28px;
      padding-right: 2em;
@@ -270,72 +272,87 @@
      margin-left: 35px;
      line-height: 4em;
  }
- /* Slideshow container */
-.slide-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-  .mySlides {
-    display: none
-  }
-  
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-
- .header-slides {
-     position: relative;
-     width: 100%;
+ 
+ .main-menu a {
+     color: white;
+     outline: none;
+     transition: color .5s ease, background .5s ease;
  }
-
- /* Caption text */
-.header-text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: relative;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-
-  .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-
-  .active {
-    background-color: #717171;
-  }
-
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
+ 
+ .main-menu a:hover {
+     color: #9966ff;
+     background-color: #c3e3ff;
+     padding: 30px;
+ }
  
  .title {
-      position: absolute;
+     position: absolute;
      top: 50px;
-     left: 30px; 
+     left: 30px;
      color: lightblue;
      font-size: 3em;
  }
-
-  /* MAIN 
+ 
+ .cta {
+     background-color: #ed4933;
+     color: #ffffff;
+ }
+ 
+ .cta {
+     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+     border-radius: 3px;
+     border: 0;
+     box-shadow: inset 0 0 0 2px #fff;
+     color: #fff;
+     cursor: pointer;
+     display: inline-block;
+     font-size: 0.8em;
+     font-weight: 600;
+     height: 3.125em;
+     letter-spacing: 0.225em;
+     line-height: 3.125em;
+     max-width: 30em;
+     padding: 0 2.75em;
+     text-align: center;
+     text-transform: uppercase;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     margin-top: -200px;
+ }
+ 
+ .inner {
+     text-align: center;
+ }
+ 
+ h2::before {
+     top: 0;
+     left: 0;
+ }
+ 
+ h2::after {
+     bottom: 0;
+     right: 0;
+ }
+ 
+ .inner h2:before,
+ .inner h2:after {
+     content: "";
+     height: 2px;
+     background: #fff;
+     display: inline-block;
+     position: absolute;
+     transition-delay: 0.25s;
+     width: 100%;
+     border-top: #fff;
+     border-bottom: #fff;
+ }
+ 
+ 
+ .current {
+     font-weight: 900;
+ }
+ /* MAIN 
  --------------------------------------------*/
  
  #banner {
@@ -368,6 +385,10 @@
      border-color: lemonchiffon;
  }
  
+ .p-font {
+     font-size: 15px;
+ }
+ 
  .bg-video {
      width: 300px;
      height: 220px;
@@ -379,22 +400,18 @@
  .container article {
      background: #fff;
      text-align: center;
-     border-style: solid;
-     border-width: 6px;
-     border-radius: 5%;
-     border-color: linen;
+     border: solid 6px 5% linen;
      margin: 1em 1em;
      white-space: normal;
      opacity: 1.0;
  }
  
- p {
+ .button {
+     background-color: lightblue;
      padding: 1em;
-     font-size: 14px;
+     font-size: 0.8em;
  }
  /* END OF SECTION ONE------------------- */
-
- 
  /*  SECTION TWO--------------------- */
  
  .bottom-container {
@@ -403,7 +420,7 @@
      position: relative;
      text-align: left;
      align-content: center;
-     background-image: url("assets/teddy images/cover1.jpg");
+     background-image: url("assets/teddy-images/ted.jpg");
      background-size: cover;
      background-position: center;
      color: lightgreen;
@@ -429,8 +446,6 @@
      color: black;
  }
  /*  END OF SECTION TWO--------------------- */
-
-
  
  .column {
      column-count: 3;
@@ -439,62 +454,6 @@
      align-items: center;
  }
  /*  END OF SECTION THREE--------------------- */
-
- /* GALLERY MAIN --------------------------------------------------------*/
- .bg-img{
-     width: 100%;
- }
- .row {
-     display: flex;
-     justify-content: space-between;
-     padding: 3em;
- }
-
-
- .image {
-     width: 100%;
- }
- .image2 {
-     width: 50%;
-     margin-left: 70px;
-     margin-bottom: 30px;
- }
- .p-box {
-     width: 50%;
-     height: 20%;
-     background-color:#cceeff;
-     /* border: solid 6px linen; */
-     margin: 5em 5em 5em 4em;
- }
-
-
- .paragraph {
-     padding: 5em 3em 0 3em;
-     text-align: center;
-     font-size: .9em;
- }
- .row article {
-    background: #cceeff;
-    text-align: center;
-    border: solid 6px linen;
-    margin: 1em 1em;
-    white-space: normal;
-    opacity: 1.0;
-}
-
-.row {
-    display: flex;
-    justify-content: space-around;
-    padding: 1em;
-    /* width: 100%;
-    height: 100%; */
-}
-
-.row>article {
-    margin: 1em;
-    padding: 2em;
-}
-
  /* footer 
  --------------------------------------------*/
  
@@ -516,7 +475,6 @@
  
  .social-icons li a {
      border-bottom: none;
-     
  }
  
  .social-icons li img {
@@ -528,5 +486,132 @@
  .copyright {
      text-align: center;
      color: white;
+ }
+ /* GALLERY MAIN --------------------------------------------------------*/
+ 
+
+ .wrapper.style2 {
+    background-color: #2e3842;
+}
+.wrapper.alt {
+    padding: 0;
+}
+
+.wrapper {
+    padding: 6em 0 4em 0;
+}
+
+
+.spotlight:nth-child(1) {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.spotlight:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.spotlight .image img {
+    border-radius: 0;
+    width: 100%;
+}
+
+
+.spotlight {
+    align-items: center;
+    display: flex;
+}
+
+.spotlight .image {
+    order: 1;
+    border-radius: 0;
+    width: 50%;
+}
+.image {
+    border-radius: 3px;
+    border: 0;
+    display: inline-block;
+    position: relative;
+    margin-left: 30px;
+}
+
+.image-middle {
+    margin-right: 30px;
+}
+
+.spotlight .content {
+    padding: 2em 4em 0.1em 4em;
+    order: 2;
+    max-width: 48em;
+    width: 50%;
+}
+/* .image img {
+    border-radius: 3px;
+    display: block;
+} */
+
+.description {
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.225em;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+}
+ .bg-img {
+     width: 100%;
+ }
+ 
+ .row {
+     display: flex;
+     justify-content: space-between;
+     padding: 3em;
+ }
+ 
+ .image1 {
+     width: 100%;
+     border: solid 6px linen;
+ }
+ 
+ .image2 {
+     width: 50%;
+     margin-left: 70px;
+     margin-bottom: 30px;
+ }
+ 
+ .p-box {
+     width: 50%;
+     height: 20%;
+     background-color: #cceeff;
+     /* border: solid 6px linen; */
+     margin: 5em 5em 5em 4em;
+ }
+ 
+ .paragraph {
+     padding: 3em 3em 0 3em;
+     text-align: center;
+     font-size: .9em;
+ }
+ 
+ .row article {
+     background: #cceeff;
+     text-align: center;
+     /* border: solid 6px linen; */
+     margin: 1em 1em;
+     padding: 4em;
+     width: 50%;
+     white-space: normal;
+     opacity: 1.0;
+ }
+ 
+ .row {
+     display: flex;
+     justify-content: space-around;
+     padding: 1em;
+     /* width: 100%;
+   height: 100%; */
+ }
+ 
+ .row>article {
+     margin: 1em;
+     padding: 2em;
  }
  /*the end--------*/
