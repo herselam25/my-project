@@ -1,617 +1,657 @@
  /*	RESET BROWSER STYLES
 -------------------------------------------------------------------------- */
  
- html,
- body,
- div,
- span,
- applet,
- object,
- iframe,
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- p,
- blockquote,
- pre,
- a,
- abbr,
- acronym,
- address,
- big,
- cite,
- code,
- del,
- dfn,
- em,
- img,
- ins,
- kbd,
- q,
- s,
- samp,
- small,
- strike,
- strong,
- sub,
- sup,
- tt,
- var,
- b,
- u,
- i,
- center,
- dl,
- dt,
- dd,
- ol,
- ul,
- li,
- fieldset,
- form,
- label,
- legend,
- table,
- caption,
- tbody,
- tfoot,
- thead,
- tr,
- th,
- td,
- article,
- aside,
- canvas,
- details,
- embed,
- figure,
- figcaption,
- footer,
- header,
- hgroup,
- menu,
- nav,
- output,
- ruby,
- section,
- summary,
- time,
- mark,
- audio,
- video {
-     margin: 0;
-     padding: 0;
-     border: 0;
-     font-size: 100%;
-     font: inherit;
-     vertical-align: baseline
- }
- 
- article,
- aside,
- details,
- figcaption,
- figure,
- footer,
- header,
- hgroup,
- menu,
- nav,
- section {
-     display: block
- }
- 
- body {
-     line-height: 1
- }
- 
- ol,
- ul {
-     list-style: none
- }
- 
- blockquote,
- q {
-     quotes: none
- }
- 
- blockquote:before,
- blockquote:after,
- q:before,
- q:after {
-     content: '';
-     content: none
- }
- 
- table {
-     border-collapse: collapse;
-     border-spacing: 0
- }
- /* Make box-sizing "border-box" as default */
- 
- html {
-     box-sizing: border-box;
- }
- 
- *,
- *:before,
- *:after {
-     box-sizing: inherit;
- }
- 
- html {
-     font-size: 16px;
-     scroll-behavior: smooth;
- }
- 
- body {
-     font-family: 'Poppins', sans-serif;
-     font-size: 1.5em;
-     font-weight: 300;
-     line-height: 1.5;
- }
- 
- header h1,
- h2,
- h3,
- h4 {
-     font-family: 'Poppins', sans-serif;
-     font-weight: 700;
- }
- 
- h1 {
-     font-size: 1.8em;
-     color: black;
-     margin-bottom: 1.3em;
-     /*real margin in px: */
- }
- 
- h2 {
-     font-size: 1.8em;
-     margin-bottom: .3em;
- }
- /*links*/
- 
- a {
-     text-decoration: none;
- }
- 
- a:hover {
-     color: #21b2a6;
- }
- /* PARAGRAPHS*/
- 
- p {
-     margin-bottom: 1em;
-     padding: 1em;
-     font-size: 24px;
- }
- 
- strong {
-     font-weight: 500;
-     color: black;
- }
- 
- em {
-     font-style: italic;
- }
- /*3. HELPER CLASSES (reusable styles)
--------------------------------------------------------------------------- */
- /* MARGINS*/
- /* .margin-bottom1 {
-     margin-bottom: 1em;
-    }
- 
- .margin-bottom1p5 {
-     margin-bottom: 1em;
- }
- 
- .margin-bottom2 {
-     margin-bottom: 1em;
- }
- 
- .MT2 {
-     margin-top: 2rem;
- }
- 
- .my2 {
-     margin: 2rem 0;
- } */
- /* PADDING*/
- /* .padding-bottom1 {
-     padding-bottom: 1em;
- }
- 
- .padding-bottom1p5 {
-     padding-bottom: 1em;
- }
- .padding-bottom2 {
-     padding-bottom: 1em;
- }   */
- /* BGS */
- /* .bd-grey {
-     background-color: rgba(0, 0, 0, 0.1);
-     padding: 1em;
- } */
- 
- .flex {
-     display: flex;
- }
- /* HEADER 
- --------------------------------------------*/
- 
- header {
-     height: 100vh;
-     background-image: url("assets/teddy-images/t.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-     color: #fff;
-     position: relative;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
-
- 
- .main-menu {
-     position: fixed;
-     background: #21b2a6;
-     top: 0;
-     right: 28px;
-     padding-right: 2em;
- }
- 
- .main-menu li {
-     display: inline-block;
-     font-weight: 400px;
-     list-style-type: none;
-     margin-left: 35px;
-     line-height: 4em;
- }
- 
- .main-menu a {
-     color: white;
-     outline: none;
-     transition: color .5s ease, background .5s ease;
- }
- 
- .main-menu a:hover {
-     color: #9966ff;
-     background-color: #c3e3ff;
-     padding: 30px;
- }
- 
- .title {
-     position: absolute;
-     top: 50px;
-     left: 30px;
-     color: lightblue;
-     font-size: 3em;
- }
- 
- .cta {
-     background-color: #ed4933;
-     color: #ffffff;
- }
- 
- .cta {
-     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-     border-radius: 3px;
-     border: 0;
-     box-shadow: inset 0 0 0 2px #fff;
-     color: #fff;
-     cursor: pointer;
-     display: inline-block;
-     font-size: 0.8em;
-     font-weight: 600;
-     height: 3.125em;
-     letter-spacing: 0.225em;
-     line-height: 3.125em;
-     max-width: 30em;
-     padding: 0 2.75em;
-     text-align: center;
-     text-transform: uppercase;
-     white-space: nowrap;
-     overflow: hidden;
-     text-overflow: ellipsis;
-     margin-top: -200px;
- }
- 
- .inner {
-     text-align: center;
- }
- 
- h2::before {
-     top: 0;
-     left: 0;
- }
- 
- h2::after {
-     bottom: 0;
-     right: 0;
- }
- 
- .inner h2:before,
- .inner h2:after {
-     content: "";
-     height: 2px;
-     background: #fff;
-     display: inline-block;
-     position: absolute;
-     transition-delay: 0.25s;
-     width: 100%;
-     border-top: #fff;
-     border-bottom: #fff;
- }
- 
- 
- .current {
-     font-weight: 900;
- }
- /* MAIN 
- --------------------------------------------*/
- 
- #banner {
-     background: lightblue;
-     text-align: center;
-     padding: 2.5em 0 1.5em 0;
-     margin-bottom: 0;
-     margin-top: -9px;
- }
- 
- .container {
-     display: flex;
-     justify-content: space-around;
-     padding: 1em;
-     background-color: lightgray;
-     width: 100%;
-     height: 100%;
- }
- 
- .container article {
-     margin: 1em;
-     padding: 2em;
- }
- 
- .img-1 {
-     width: 70%;
-     border-style: solid;
-     border-width: 10px;
-     border-radius: 50%;
-     border-color: lemonchiffon;
- }
- 
- .p-font {
-     font-size: 15px;
- }
- 
- .bg-video {
-     width: 300px;
-     height: 220px;
-     border-style: solid;
-     border-width: 10px;
-     border-color: lemonchiffon;
- }
- 
- .container article {
-     background: #fff;
-     text-align: center;
-     border: solid 6px 5% linen;
-     margin: 1em 1em;
-     white-space: normal;
-     opacity: 1.0;
- }
- 
- .button {
-     background-color: lightblue;
-     padding: 1em;
-     font-size: 0.8em;
- }
- /* END OF SECTION ONE------------------- */
- /*  SECTION TWO--------------------- */
- 
- .bottom-container {
-     width: 100%;
-     height: 400px;
-     position: relative;
-     text-align: left;
-     align-content: center;
-     background-image: url("assets/teddy-images/ted.jpg");
-     background-size: cover;
-     background-position: center;
-     color: lightgreen;
-     display: table;
- }
- 
- .bottom-text-container {
-     display: table-cell;
-     vertical-align: middle;
-     position: relative;
- }
- 
- .text {
-     margin-left: 100px;
-     font-size: 48px;
-     letter-spacing: 12px;
-     color: black
- }
- 
- .text-2 {
-     font-size: 35px;
-     margin-left: 18px;
-     color: black;
- }
- /*  END OF SECTION TWO--------------------- */
- 
- .column {
-     column-count: 3;
-     background-color: blanchedalmond;
-     margin: 18px;
-     align-items: center;
- }
- /*  END OF SECTION THREE--------------------- */
- /* footer 
- --------------------------------------------*/
- 
- .footer-box {
-     margin-top: 0;
-     padding: 20px;
-     background-color: lightblue;
- }
- 
- .social-icons {
-     text-align: center;
-     padding-top: 1px;
- }
- 
- .social-icons li {
-     display: inline-block;
-     list-style-type: none;
- }
- 
- .social-icons li a {
-     border-bottom: none;
- }
- 
- .social-icons li img {
-     width: 85px;
-     height: 55px;
-     /* margin-right: 20px; */
- }
- 
- .copyright {
-     text-align: center;
-     color: white;
- }
- /* GALLERY MAIN --------------------------------------------------------*/
- 
-
- .wrapper.style2 {
-    background-color: #2e3842;
-}
-.wrapper.alt {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
 }
 
-.wrapper {
-    padding: 6em 0 4em 0;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+/* Make box-sizing "border-box" as default */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 
-.spotlight:nth-child(1) {
-    background-color: rgba(0, 0, 0, 0.075);
+/*main tags */
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
 }
 
-.spotlight:nth-child(2) {
-    background-color: rgba(0, 0, 0, 0.15);
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    line-height: 1.5em;
+    color: #333;
 }
-.spotlight .image img {
-    border-radius: 0;
+
+header h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: inherit;
+    line-height: 1.75;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 0;
+    /*real margin in px: */
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+h3 {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+/* PARAGRAPHS----------------*/
+
+p {
+    margin-bottom: 1em;
+}
+
+
+/*links
+--------------------------------*/
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+/*Standard Tags For Bold*/
+
+strong {
+    font-weight: 500;
+    color: black;
+}
+
+em {
+    font-style: italic;
+}
+/*Images
+-------------------*/
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* Form Element*/
+
+/* Selection, placeholder*/
+
+
+/*3. HELPER CLASSES (reusable styles)
+-------------------------------------------------------------------------- */
+.font400 {
+    font-weight: 400;
+}
+.font500 {
+    font-weight: 500;
+}
+
+.font700 {
+    font-weight: 700;
+}
+.align-center {
+    text-align: center;
+}
+.m0 {
+    margin: 0;
+}
+
+
+/* MARGINS*/
+/* .margin-bottom1 {
+    margin-bottom: 1em;
+   }
+
+.margin-bottom1p5 {
+    margin-bottom: 1em;
+}
+
+.margin-bottom2 {
+    margin-bottom: 1em;
+}
+
+.MT2 {
+    margin-top: 2rem;
+}
+
+.my2 {
+    margin: 2rem 0;
+} */
+/* PADDING*/
+/* .padding-bottom1 {
+    padding-bottom: 1em;
+}
+
+.padding-bottom1p5 {
+    padding-bottom: 1em;
+}
+.padding-bottom2 {
+    padding-bottom: 1em;
+}   */
+/* BGS */
+/* .bd-grey {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1em;
+} */
+/*rows and columns*/
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*Header with borders top-bottom helper*/
+.inner {
+    margin-top: 3em;
+    color: #ffffff;
+}
+.border {
+    display: inline-block;
+    padding: .3em;
+    border-top: solid 2px lightgray;
+    border-bottom: solid 2px lightgray;
+
+}
+
+
+
+/*Layout
+-------------------------*/
+/* HEADER 
+--------------------------------------------*/
+
+.top-header {
+    background-color: #b3d9ff;
+    margin-left: -4em;
+    margin-right: -8em;
+}
+#logo {
+    width: 10%;
+}
+/*main
+---------------------------*/
+section {
+    padding: 2em 4%;
+    background-color: lightslategray;
+}
+/*Menu
+---------------------------------*/
+.menu li {
+    margin-left: 2em;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #8a8a8a;
+    transition: color .2s;
+}
+/*End of Header
+----------------------------------*/
+/* MAIN 
+--------------------------------------------*/
+
+.bc-img {
+    background-image: url("assets/teddy-images/t.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.cta {
+    background-color: #ed4933;
+    color: #ffffff;
+}
+
+.cta {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: inset 0 0 0 2px #fff;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    height: 3.125em;
+    line-height: 3.125em;
+    max-width: 30em;
+    padding: 0 2.75em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h2::before {
+    top: 0;
+    left: 0;
+}
+
+h2::after {
+    bottom: 0;
+    right: 0;
+}
+
+.inner h2:before,
+.inner h2:after {
+    content: "";
+    height: 2px;
+    display: inline-block;
+    position: absolute;
+    transition-delay: 0.25s;
     width: 100%;
 }
 
 
-.spotlight {
+.current {
+    font-weight: 900;
+}
+
+#banner {
+    background: lightblue;
+    text-align: center;
+    padding: 2.5em 0 1.5em 0;
+    margin-bottom: 0;
+    margin-top: -9px;
+}
+
+.container {
+    padding: 1em;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+}
+
+.container article {
+    margin: 1em;
+    padding: 2em;
+}
+
+.img-1 {
+    width: 70%;
     align-items: center;
-    display: flex;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 50%;
+    border-color: lemonchiffon;
+}
+
+.p-font {
+    font-size: 15px;
+}
+
+.bg-video {
+    width: 300px;
+    height: 220px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: lemonchiffon;
+}
+
+.container article {
+    background: #fff;
+    text-align: center;
+    border: solid 6px 5% linen;
+    margin: 1em 1em;
+    white-space: normal;
+    opacity: 1.0;
+}
+
+.button {
+    background-color: lightblue;
+    padding: 1em;
+    font-size: 0.8em;
+}
+/* END OF SECTION ONE------------------- */
+/*  SECTION TWO--------------------- */
+
+.bottom-container {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    text-align: left;
+    align-content: center;
+    background-image: url("assets/teddy-images/ted.jpg");
+    background-size: cover;
+    background-position: center;
+    color: lightgreen;
+    display: table;
+}
+
+.bottom-text-container {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.text {
+    margin-left: 100px;
+    font-size: 48px;
+    letter-spacing: 12px;
+    color: black
+}
+
+.text-2 {
+    font-size: 35px;
+    margin-left: 18px;
+    color: black;
+}
+/*  END OF SECTION TWO--------------------- */
+
+.column {
+    column-count: 3;
+    background-color: blanchedalmond;
+    margin: 18px;
+    align-items: center;
+}
+/*  END OF SECTION THREE--------------------- */
+/* footer 
+--------------------------------------------*/
+
+.footer-box {
+    margin-top: 0;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.social-icons {
+    text-align: center;
+    padding-top: 1px;
+}
+
+.social-icons li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.social-icons li a {
+    border-bottom: none;
+}
+
+.social-icons li img {
+    width: 85px;
+    height: 55px;
+    /* margin-right: 20px; */
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+}
+/* GALLERY MAIN --------------------------------------------------------*/
+
+
+.wrapper.style2 {
+   background-color: #2e3842;
+}
+.wrapper.alt {
+   padding: 0;
+}
+
+.wrapper {
+   padding: 6em 0 4em 0;
+}
+
+
+.spotlight:nth-child(1) {
+   background-color: rgba(0, 0, 0, 0.075);
+}
+
+.spotlight:nth-child(2) {
+   background-color: rgba(0, 0, 0, 0.15);
+}
+.spotlight .image img {
+   border-radius: 0;
+   width: 100%;
+}
+
+
+.spotlight {
+   align-items: center;
+   display: flex;
 }
 
 .spotlight .image {
-    order: 1;
-    border-radius: 0;
-    width: 50%;
+   order: 1;
+   border-radius: 0;
+   width: 50%;
 }
 .image {
-    border-radius: 3px;
-    border: 0;
-    display: inline-block;
-    position: relative;
-    margin-left: 30px;
+   border-radius: 3px;
+   border: 0;
+   display: inline-block;
+   position: relative;
+   margin-left: 30px;
 }
 
 .image-middle {
-    margin-right: 30px;
+   margin-right: 30px;
 }
 
 .spotlight .content {
-    padding: 2em 4em 0.1em 4em;
-    order: 2;
-    max-width: 48em;
-    width: 50%;
+   padding: 2em 4em 0.1em 4em;
+   order: 2;
+   max-width: 48em;
+   width: 50%;
 }
 /* .image img {
-    border-radius: 3px;
-    display: block;
+   border-radius: 3px;
+   display: block;
 } */
 
 .description {
-    color: #fff;
-    font-weight: 800;
-    letter-spacing: 0.225em;
-    line-height: 1em;
-    margin: 0 0 1em 0;
-    text-transform: uppercase;
+   color: #fff;
+   font-weight: 800;
+   letter-spacing: 0.225em;
+   line-height: 1em;
+   margin: 0 0 1em 0;
+   text-transform: uppercase;
 }
- .bg-img {
-     width: 100%;
- }
- 
- .row {
-     display: flex;
-     justify-content: space-between;
-     padding: 3em;
- }
- 
- .image1 {
-     width: 100%;
-     border: solid 6px linen;
- }
- 
- .image2 {
-     width: 50%;
-     margin-left: 70px;
-     margin-bottom: 30px;
- }
- 
- .p-box {
-     width: 50%;
-     height: 20%;
-     background-color: #cceeff;
-     /* border: solid 6px linen; */
-     margin: 5em 5em 5em 4em;
- }
- 
- .paragraph {
-     padding: 3em 3em 0 3em;
-     text-align: center;
-     font-size: .9em;
- }
- 
- .row article {
-     background: #cceeff;
-     text-align: center;
-     /* border: solid 6px linen; */
-     margin: 1em 1em;
-     padding: 4em;
-     width: 50%;
-     white-space: normal;
-     opacity: 1.0;
- }
- 
- .row {
-     display: flex;
-     justify-content: space-around;
-     padding: 1em;
-     /* width: 100%;
-   height: 100%; */
- }
- 
- .row>article {
-     margin: 1em;
-     padding: 2em;
- }
- /*the end--------*/
+.bg-img {
+    width: 100%;
+}
+
+/* .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+} */
+
+.image1 {
+    width: 100%;
+    border: solid 6px linen;
+}
+
+.image2 {
+    width: 50%;
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+
+.p-box {
+    width: 50%;
+    height: 20%;
+    background-color: #cceeff;
+    /* border: solid 6px linen; */
+    margin: 5em 5em 5em 4em;
+}
+
+.paragraph {
+    padding: 3em 3em 0 3em;
+    text-align: center;
+    font-size: .9em;
+}
+
+.row article {
+    background: #cceeff;
+    text-align: center;
+    /* border: solid 6px linen; */
+    margin: 1em 1em;
+    padding: 4em;
+    width: 50%;
+    white-space: normal;
+    opacity: 1.0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    /* width: 100%;
+  height: 100%; */
+}
+
+.row>article {
+    margin: 1em;
+    padding: 2em;
+}
+/*the end--------*/
