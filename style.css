@@ -339,15 +339,10 @@ img {
 
 #logo{
     width: 10%;
+    margin-top: 1em;
     margin-left:-58em;
     }
-    #header nav > ul {
-        list-style: none;
-        margin: 0;
-        padding-left: 0;
-    }
-
-   
+ 
 
 /*main
 ---------------------------*/
