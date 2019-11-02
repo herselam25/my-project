@@ -284,10 +284,17 @@ img {
     padding: 1em;
 } */
 /*rows and columns*/
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.column {
+    width: 47%;
+    display: block;
+}
+.column-1 {
+    width: 40%;
 }
 
 
@@ -351,7 +358,9 @@ img {
 ---------------------------*/
 section {
     padding: 2em 4%;
-    background-color: lightslategray;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: rgba(89, 100, 126, 0.27);
 }
 /*Menu
 ---------------------------------*/
@@ -374,10 +383,26 @@ section {
 ----------------------------------*/
 /* MAIN 
 --------------------------------------------*/
-
-.bc-img {
-    background-attachment: scroll, fixed;
+.h-img {
     background-image: url("assets/teddy-images/t.jpg");
+
+}
+/* Gallery header
+---------------------------------*/
+.g-img {
+    background-image: url("assets/teddy-images/tr.jpg");
+}
+.bio-img {
+    background-image: url("assets/teddy-images/perform.jpg");
+}
+
+.g-text {
+    color: white;
+}
+
+
+.bc {
+    background-attachment: scroll, fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -529,7 +554,7 @@ h2::after {
 }
 /*  END OF SECTION TWO--------------------- */
 
-.column {
+.columns {
     column-count: 3;
     background-color: blanchedalmond;
     margin: 18px;
@@ -569,8 +594,8 @@ h2::after {
     text-align: center;
     color: white;
 }
-/* GALLERY MAIN --------------------------------------------------------*/
-
+/* GALLERY MAIN 
+--------------------------------------------------------*/
 
 .wrapper.style2 {
    background-color: #2e3842;
@@ -642,12 +667,6 @@ h2::after {
     width: 100%;
 }
 
-/* .row {
-    display: flex;
-    justify-content: space-between;
-    padding: 3em;
-} */
-
 .image1 {
     width: 100%;
     border: solid 6px linen;
@@ -695,5 +714,22 @@ h2::after {
 .row>article {
     margin: 1em;
     padding: 2em;
+}
+/*BIOGRAPHY
+----------------------------------------------*/
+.Biography {
+    display: inline-block;
+    color:darkred;
+    border-bottom: solid 2px darkred;
+    align-items: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+.bg-co {
+    background-color: aliceblue;
+}
+.b-title {
+    margin-bottom: -0.7em;
+    color: darkred;
 }
 /*the end--------*/
