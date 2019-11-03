@@ -373,6 +373,12 @@ section {
     color: #8a8a8a;
     transition: color .2s;
 }
+/* amleset page background-color for header
+--------------------------------------------------*/
+.a-header {
+    background-color: rgba(89, 100, 126, 0.27);
+
+}
 /*End of Header
 ----------------------------------*/
 /* MAIN 
@@ -388,6 +394,11 @@ section {
 }
 .bio-img {
     background-image: url("assets/teddy-images/perform.jpg");
+}
+.a-img {
+    background-image: url("assets/teddy-images/amli.jpg");
+
+
 }
 
 .g-text {
