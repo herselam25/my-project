@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB DESIGNED BY H&H</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="gallery.css">
 
@@ -17,6 +18,12 @@
                 <figure id="logo">
                     <img src="assets/teddy-images/teddy-official-logo1.png">
                 </figure>
+                <figure id="nav-triggers">
+                    <a href="#" id="open-menu" class="trigger"><img src="assets/ICONS/burger-icon.svg" alt="burger menu"></a>
+                    <a href="#" id="close-menu" class="trigger"><img src="assets/ICONS/close-icon.svg" alt="close menu"></a>
+        
+                </figure>
+        
         
                 <nav id="main-nav">
         
@@ -66,14 +73,14 @@
             </section>
         </section>
         <section>
-<div class="row">
-            <figure class="column">
-                <img class="image1" src="assets/family-images/wedd1.jpg" alt="performance">
+
+            <figure class="row">
+               <a data-fancybox="gallery" href="assets/family-images/wedding2.jpg"><img class="image1" src="assets/family-images/wedding2.jpg" alt="performance"></a>
+               <a data-fancybox="gallery" href="assets/teddy-images/T5LNROJK743CXPSADTU3PCFX5Q.jpg"><img class="image1" src="assets/teddy-images/T5LNROJK743CXPSADTU3PCFX5Q.jpg" alt="performance"></a>
+               <a data-fancybox="gallery" href="assets/family-images/holiday1.jpg"><img class="image1" src="assets/family-images/holiday1.jpg" alt="performance"></a>
             </figure>
-            <figure class="column">
-                <img class="image1" src="assets/family-images/wedding1.jpg" alt="performance">
-            </figure>
-        </div>
+           
+        
     </section>
 
 
@@ -127,6 +134,10 @@
 
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="app.js"></script>
+
 
 </body>
 
