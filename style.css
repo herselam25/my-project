@@ -384,7 +384,7 @@
  }
  
  #logo {
-     width: 12%;
+     width: 10%;
      max-width: 100px;
  }
  /*main
@@ -426,11 +426,7 @@
  }
  /* amleset page background-color for header
 --------------------------------------------------*/
- 
- .a-header {
-     background-color: rgba(89, 100, 126, 0.27);
- }
- /*End of Header
+  /*End of Header
 ----------------------------------*/
  /* MAIN 
 --------------------------------------------*/
@@ -451,7 +447,7 @@
  }
  
  .a-img {
-     background-image: url("assets/teddy-images/amli.jpg");
+     background-image: url("assets/teddy-images/amli\ copy.jpg");
  }
  
  .g-text {
