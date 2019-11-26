@@ -774,7 +774,6 @@
  /* MEDIA QUERIES
 ===================================================================================*/
  /*# region media Queries*/
- 
  @media (max-width:1024px) {
      body {
          font-size: 1em;
@@ -825,6 +824,9 @@
  
  @media (max-width:800px) {
      /* LOGO*/
+     .row:not(.top-header) {
+        display: block;
+    }
      .menu-is-open #logo {
          position: relative;
          z-index: 1;
@@ -879,13 +881,13 @@
          position: fixed;
          top: 0;
          left: 0;
-         background-color: rgba(0, 0, 0, .95);
+         background-color: rgba(0, 0, 0, .85);
          width: 100vw;
          height: 100vh;
      }
      .menu {
          text-align: center;
-         font-size: 8vw;
+         font-size: 4vw;
      }
      .menu li {
          color: #888;
