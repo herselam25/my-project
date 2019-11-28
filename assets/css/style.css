@@ -360,21 +360,21 @@ section {
 /*hompage front image---------*/
 
 .h-img {
-    background-image: url("/assets/img/teddy-images/t.jpg");
+    background-image: url("assets/img/teddy-images/t.jpg");
 }
 /* Gallery header
 ---------------------------------*/
 
 .g-img {
-    background-image: url("/assets/img/teddy-images/tr.jpg");
+    background-image: url("assets/img/teddy-images/tr.jpg");
 }
 
 .bio-img {
-    background-image: url("/assets/img/teddy-images/perform.jpg");
+    background-image: url("assets/img/teddy-images/perform.jpg");
 }
 
 .a-img {
-    background-image: url("/assets/img/teddy-images/amli\ copy.jpg");
+    background-image: url("assets/img/teddy-images/amli\ copy.jpg");
 }
 
 .g-text {
@@ -505,7 +505,7 @@ iframe.column-2 {
     position: relative;
     text-align: left;
     align-content: center;
-    background-image: url("/assets/img/teddy-images/ted.jpg");
+    background-image: url("assets/img/teddy-images/ted.jpg");
     background-size: cover;
     background-position: center;
     color: lightgreen;
