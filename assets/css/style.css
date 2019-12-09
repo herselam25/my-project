@@ -436,7 +436,7 @@ h2::after {
     width: 100%;
 }
 
-.current {
+.active {
     font-weight: 900;
 }
 /* Desktop first version (so, use "max-width")

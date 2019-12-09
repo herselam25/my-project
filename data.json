@@ -1,0 +1,38 @@
+{
+  "index" : {
+    "title" : "Title for index page",
+    "menu" : "HOME",
+    "isMenu" : true
+  },
+
+  "Biography" : {
+    "title" : "Biography",
+      "menu" : "Biography",
+      "isMenu" : true
+
+  },
+
+  "Gallery" :{
+    "title" :"Gallery",
+      "menu" :"Gallery",
+      "isMenu" : true
+
+  },
+ "amleset-muchie" : {
+    "title" :"amleset-muchie",
+    "menu" :"amleset-muchie", 
+    "isMenu" : true
+ 
+  },
+
+  "contact" : {
+    "title" :"Title for CONTACT page",
+    "menu" :"CONTACT",
+    "isMenu" : false
+
+   
+  }
+
+ 
+  
+}
