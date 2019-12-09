@@ -1,17 +1,17 @@
-# my really important project or whatever
+# my first project 
 By her 2019 
 
 ## seconed title
 content here
 
 ---
-## italic and bold
-put ***some text*** here...<br>
+##  Bold
+Some of my bold texts ***Welcome to Teddy Afro website*** <br>
+Some of my bold texts ***Tewodros Kassahun*** <br>
+
 put another text here
 
-put **some text** here...
 
-put _another ~~text_ here
 
 
 
@@ -27,12 +27,13 @@ hermon.
 ---
 
 
-## Lists
-- Bob
-- Mark
-  - Dark hair
-  - Easy going
-- James
+## Menus
+- home
+   -Contacts
+- Biography
+- Gallery
+- amleset-muchie
+ 
   
 
   1. Malcoln Young

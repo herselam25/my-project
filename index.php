@@ -20,7 +20,7 @@
     <header id="top-header" class="top-header row">
 
         <figure id="logo">
-            <a href="?page=index"><img src="assets/img/teddy-images/teddy-official-logo1.png"></a>
+            <a href="index"><img src="assets/img/teddy-images/teddy-official-logo1.png"></a>
         </figure>
 
         <figure id="nav-triggers">
